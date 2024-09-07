@@ -1,0 +1,114 @@
+.Sidebar-filter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Sidebar-filter .filter-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Sidebar-filter .sidebar-box, .mobile-btn {
+    background: var(--back-color);
+    color: var(--white);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    height: 68px;
+}
+
+.Sidebar-filter .search-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Sidebar-filter .search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    color: var(--white);
+    width: 100%;
+}
+
+.Sidebar-filter .search-box input::placeholder {
+    opacity: .5;
+}
+
+.Sidebar-filter .search-box button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Sidebar-filter .search-box button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.Sidebar-filter .filter-btn {
+    padding: 0 !important;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-color: var(--main);
+    transition: 400ms;
+}
+
+.Sidebar-filter .filter-btn:hover,
+.Sidebar-filter .filter-btn.active {
+    border: 1px solid;
+    color: var(--main);
+    box-shadow: 0 0 5px 1px var(--main);
+}
+
+.Sidebar-filter h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-btn {
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.mobile-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .Sidebar-filter .filter-div {
+        flex-direction: row;
+    }
+
+    .Sidebar-filter .filter-div h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .filter-div {
+        flex-direction: column !important;
+    }
+}
+
+

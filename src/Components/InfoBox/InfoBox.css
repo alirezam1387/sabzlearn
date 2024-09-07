@@ -1,0 +1,32 @@
+.info-box {
+    border-radius: 20px;
+    color: #fff;
+    gap: 10px;
+    padding: 15px;
+}
+
+.info-box .icon-box {
+    width: 68px;
+    height: 68px;
+    border-radius: 20px;
+    background-color: rgba(256, 256, 256, 0.4);
+}
+
+.info-box .icon-box svg {
+    width: 25px;
+    height: 25px;
+}
+
+.info-box .infos {
+    flex-direction: column;    
+}
+
+.info-box .infos .title {
+    font-size: .8rem;
+}
+
+.info-box .infos .data {
+    font-size: 1.3rem;
+    min-width: max-content;
+    font-weight: bold;
+}

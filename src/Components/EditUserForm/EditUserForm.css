@@ -1,0 +1,84 @@
+.input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    color: var(--white);
+}
+
+.input-box label {
+    margin-right: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--main-back-color);
+    color: var(--white);
+    background-color: var(--main-back-color);
+    height: 60px ;
+    padding: 3px 8px;
+    outline: none;
+
+}
+
+.input-box input:focus {
+    border: 2px solid var(--back-color) !important;
+}
+
+.input-box p {
+    color: red;
+}
+
+.submit-btn {
+    padding: 13px 35px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: var(--main);
+    color: #fff;
+    border: 2px solid var(--main);
+    outline: 0;
+    transition: 400ms;
+}
+
+.submit-btn:hover {
+    color: var(--main);
+    background-color: transparent;
+}
+
+.forgot-pass {
+    color: var(--white);
+    transition: 400ms;
+    margin: 20px 0;
+    font-size: 1rem;
+    display: block;
+}
+
+.forgot-pass:hover {
+    color: var(--main);
+}
+
+.eye-pass {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.eye-pass .icon-box {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--main-back-color);
+    cursor: pointer;
+    border: 1px solid var(--main);
+}
+
+.eye-pass svg {
+    width: 19px;
+    height: 19px;
+    color: #fff;
+}

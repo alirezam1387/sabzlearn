@@ -1,0 +1,76 @@
+.ability-box {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--back-color);
+    color: var(--white);
+    cursor: context-menu;
+    border-radius: 20px;
+}
+
+.ability-box .icon-box {
+    position: relative;
+    width: 10%;
+    display: block;
+    height: 100%;
+}
+
+.ability-box .icon-box svg {
+    position: absolute;
+    top: -30px;
+    right: 35px;
+    width: 55px;
+    height: 55px;
+}
+
+.ability-box .icon-box span {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    width: 55px;
+    height: 100px;
+    opacity: 0.2;
+}
+
+.ability-box .info {
+    width: 90%;
+}
+
+.ability-box .info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.ability-box .info p {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: .5;
+}
+
+@media screen and (max-width: 1400px) {
+    .ability-box .info {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .ability-box {
+        flex-direction: column;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .ability-box .info {
+        margin: 0;
+    }
+
+    .ability-box .icon-box svg {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .ability-box .icon-box span {
+        display: none;
+    }
+}

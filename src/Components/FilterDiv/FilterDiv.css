@@ -1,0 +1,66 @@
+.filter-box {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: 400ms;
+}
+
+.filter-box.active {
+    transform: translateY(0) !important;
+}
+
+.filter-box .top-bar {
+    background: var(--back-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--white);
+}
+
+.filter-box .top-bar h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.filter-box .top-bar svg {
+    width: 25px;
+    height: 25px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.filter-box ul {
+    padding: 20px 30px 0 30px;
+    color: var(--white);
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-back-color);
+}
+
+.filter-box ul li{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 400ms;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+.filter-box ul li svg {
+    width: 23px;
+    height: 23px;
+}
+
+.filter-box ul li.active, .filter-box ul li:hover {
+    color: var(--main);
+    font-weight: bold;
+}

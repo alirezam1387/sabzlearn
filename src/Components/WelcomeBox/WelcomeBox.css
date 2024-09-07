@@ -1,0 +1,42 @@
+.welcome-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.welcome-box > p {
+    font-size: 1.6rem;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btns > * {
+    width: 60px;
+    height: 60px;
+}
+
+.btns svg {
+    width: 23px;
+    height: 23px;
+}
+
+.btns button.user-img {
+    padding: 0;
+}
+
+.btns img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:750px) {
+    .welcome-box > p {
+        font-size: 1rem;
+    }
+}

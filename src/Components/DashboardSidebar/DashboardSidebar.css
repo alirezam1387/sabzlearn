@@ -1,0 +1,42 @@
+.dashboard-sidebar{
+    padding: 50px 20px;
+}
+
+.dashboard-sidebar img {
+    width: 50%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.dashboard-sidebar .sidebar-items, .DashboardResponsive .sidebar-items {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.dashboard-sidebar .sidebar-items>a, .DashboardResponsive .sidebar-items>a {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    transition: 400ms;
+    width: 100%;
+}
+
+.dashboard-sidebar .sidebar-items>a:hover,
+.dashboard-sidebar .sidebar-items>a.active,
+.DashboardResponsive .sidebar-items>a:hover,
+.DashboardResponsive .sidebar-items>a.active  {
+    background-color: var(--main);
+    color: #fff;
+}
+
+.dashboard-sidebar .sidebar-items>a svg {
+    width: 20px;
+    height: 20px;
+}

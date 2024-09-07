@@ -1,0 +1,176 @@
+header {
+    background-color: var(--back-color);
+    color: var(--whtie);
+    padding: 20px 50px !important;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 13px 0 var(--main);
+}
+
+.right-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.right-nav img {
+    height: 3rem;
+}
+
+.right-nav .nav-items {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.right-nav .nav-items a {
+    color: var(--white);
+}
+
+.right-nav .nav-items .nav-item {
+    position: relative;
+}
+
+.right-nav .nav-items .nav-item>li>a {
+    font-size: 1rem;
+}
+
+.right-nav .nav-sub-item {
+    position: absolute;
+    padding-top: 20px;
+    right: -10px;
+    transition: .7s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.right-nav .nav-sub-item .nav-sub-item-child {
+    border-radius: 20px;
+    background-color: var(--back-color);
+    width: 300px;
+    box-shadow: 0px 0px 5px var(--main);
+    padding: 10px 20px;
+}
+
+.right-nav .nav-items .nav-item:hover .nav-sub-item {
+    opacity: 1 !important;
+    pointer-events: all;
+}
+
+.right-nav .nav-sub-item a:hover,
+.right-nav .nav-items .nav-item:hover>li>a {
+    color: var(--main);
+}
+
+.right-nav .nav-sub-item a,
+.right-nav .nav-items .nav-item a {
+    transition: .3s;
+}
+
+.right-nav .nav-sub-item li {
+    margin: 15px 0;
+    width: 100%;
+}
+
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-nav .search-box,
+.header-search-box {
+    background-color: var(--gray);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-nav .search-box input,
+.header-search-box input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1rem;
+    padding: 15px 0;
+}
+
+.left-nav .search-box input::placeholder,
+.header-search-box input::placeholder {
+    color: var(--white);
+    opacity: .5;
+}
+
+.left-nav .search-box svg,
+.header-search-box svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+
+.header-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--gray);
+    border-radius: 100%;
+    border: 2px solid var(--gray);
+    outline: none;
+    transition: 400ms;
+}
+
+.header-btn:hover {
+    border: 2px solid var(--main);
+}
+
+.header-btn svg {
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+    transition: 400ms;
+}
+
+.header-btn:hover svg {
+    color: var(--main) !important;
+}
+
+@media screen and (max-width:1250px) {
+    .left-nav .search-btn {
+        display: block !important;
+    }
+
+    header .search-box {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    header>.header-btn {
+        display: block !important;
+    }
+
+    .right-nav {
+        display: none !important;
+    }
+
+
+    .left-nav .search-btn {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:650px) {
+    header {
+        padding: 20px !important;
+    }
+}

@@ -1,0 +1,118 @@
+.landing {
+    width: 100%;
+    color: var(--white);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    margin-top: 130px;
+}
+
+.landing h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.landing p {
+    font-size: 2rem;
+    margin-top: 25px;
+    font-family: 'vazir-thin' !important;
+}
+
+.start-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--second);
+    height: 52px;
+    width: 200px;
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: 400ms;
+    border: none;
+}
+
+.start-btn:hover {
+    filter: brightness(85%);
+}
+
+.landing .video-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: var(--main);
+    color: var(--white);
+    border-radius: 100%;
+}
+
+.landing .video-btn a svg {
+    transition: 400ms;
+}
+
+.landing .video-btn a:hover svg {
+    transform: rotate(360deg);
+}
+
+.video-btn span {
+    font-size: 1.1rem;
+}
+
+.landing img {
+    position: absolute;
+    top: 0;
+    left: -150px;
+}
+
+@media screen and (max-width : 1350px) {
+    .landing img {
+        width: 580px;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .landing {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .landing h2, .landing p {
+        text-align: center;
+    }
+
+    .landing img {
+        position: relative;
+        width: 100%;
+        top: auto;
+        left: auto;
+    }
+
+}
+
+@media screen and (max-width : 700px) {
+    .landing h2 {
+        font-size: 1.5rem;
+    }
+
+    .landing p {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width : 600px) {
+    .video-btn span {
+        display: none;
+    }
+
+    .landing {
+        padding-top: 20px;
+    }
+}

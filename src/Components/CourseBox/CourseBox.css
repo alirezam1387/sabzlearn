@@ -1,0 +1,90 @@
+.course-box {
+    background-color: var(--back-color);
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.course-box img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.course-box .info {
+    padding: 15px;
+}
+
+.course-box .info .title {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    transition: 400ms;
+}
+
+.course-box .info .title a {
+    color: var(--white);
+    transition: 400ms;
+}
+
+.course-box .info .subtitle {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: .6;
+}
+
+.course-box .other-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.course-box .other-info .teacher,
+.course-box .other-info .stars,
+.course-box .footer-box .users,
+.course-box .footer-box .price .off-price {
+    opacity: .6;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    gap: 5px;
+    transition: 400ms;
+}
+
+.course-box .other-info .teacher:hover,
+.course-box .title a:hover {
+    color: var(--main);
+}
+
+.course-box .other-info .stars {
+    opacity: 1;
+    color: #F59E0B;
+}
+
+.course-box .footer-box {
+    padding-top: 5px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.course-box .footer-box svg {
+    width: 20px;
+    height: 20px;
+}
+
+.course-box .footer-box .users {
+    align-items: flex-start;
+}
+
+
+.course-box .footer-box .price>span {
+    text-decoration: line-through !important;
+    font-size: .8rem;
+}
+
+.course-box .footer-box .price .off-price {
+    opacity: 1;
+    color: var(--main);
+    align-items: flex-start;
+}

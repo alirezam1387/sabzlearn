@@ -1,0 +1,90 @@
+.sidebar-header, .DashboardResponsive {
+    width: 16rem;
+    height: 100vh;
+    background-color: var(--back-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    transition: 400ms;
+    z-index: 5;
+    box-shadow: 0 0 13px 0 var(--main);
+    overflow: auto;
+}
+
+.sidebar-header.in-active, .DashboardResponsive.in-active {
+    transform: translateX(290px);
+}
+
+.sidebar-header .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.sidebar-header img, .DashboardResponsive img {
+    height: 3.5rem;
+}
+
+.sidebar-header hr {
+    height: 5px;
+    color: #ffffff8a;
+}
+
+
+.sidebar-header > ul {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.sidebar-header .nav-item li a{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.sidebar-header .nav-item li a svg {
+    transform: rotate(90deg);
+    transition: 200ms;
+}
+
+.sidebar-header .nav-item li a svg.active {
+    transform: rotate(0deg) !important;
+}
+
+.sidebar-header .nav-sub-item {
+    padding: 10px;
+    background: var(--main-back-color);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.sidebar-header .nav-sub-item.active {
+    display: block;
+}
+
+.sidebar-header .nav-sub-item .nav-sub-item-child {
+    padding: 0;
+}
+
+.sidebar-header .nav-sub-item a {
+    display: block;
+    width: 100%;
+}
+
+.sidebar-header .nav-sub-item a li{
+    color: var(--white);
+    margin: 15px 0;
+    transition: all 400ms;
+}
+
+.sidebar-header .nav-sub-item a:hover li {
+    color: var(--main);
+}

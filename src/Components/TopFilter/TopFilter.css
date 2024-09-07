@@ -1,0 +1,76 @@
+.top-filter {
+    color: var(--white);
+    background-color: var(--back-color);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+    height: 64px;
+    padding: 0 20px;
+}
+
+.top-filter .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.top-filter .title svg {
+    width: 25px;
+    height: 25px;
+}
+
+.top-filter .title span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.top-filter .items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.top-filter .items a {
+    color: var(--white);
+    position: relative;
+    height: 100%;
+    transition: 400ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-filter .items a:hover,
+.top-filter .items a.active {
+    color: var(--main);
+}
+
+.top-filter .items a:hover::before,
+.top-filter .items a:hover::after,
+.top-filter .items a.active::before,
+.top-filter .items a.active::after {
+    opacity: 1;
+}
+
+.top-filter .items a::before,
+.top-filter .items a::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main);
+    position: absolute;
+    opacity: 0;
+    transition: 400ms;
+}
+
+.top-filter .items a::before {
+    top: 0;
+}
+
+.top-filter .items a::after {
+    bottom: 0;
+}

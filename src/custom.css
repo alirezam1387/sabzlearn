@@ -1,0 +1,119 @@
+:root {
+    --main: #16A34A;
+    --second: #0284C7;
+    --white: #fff;
+    --main-back-color: #111827;
+    --back-color: #242A38;
+    --gray: #2F3542;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--back-color);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--main);
+    border-radius: 2px;
+}
+
+@font-face {
+    font-family: 'vazir-thin';
+    src: url(/src/Assets/fonts/Vazir-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'vazir';
+    src: url(/src/Assets/fonts/Vazir.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'vazir-bold';
+    src: url(/src/Assets/fonts/Vazir-Bold.ttf);
+    font-weight: bold;
+}
+
+body,
+#root {
+    background-color: var(--main-back-color);
+    direction: rtl !important;
+}
+
+* {
+    text-decoration: none !important;
+    box-sizing: border-box;
+    font-family: 'vazir' !important;
+    font-weight: normal;
+    direction: rtl !important;
+}
+
+::selection {
+    background: var(--main);
+    color: #fff;
+}
+
+#responsive-haeder .overlay {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #0006;
+    transition: 400ms;
+}
+
+#responsive-haeder .overlay.in-active {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dashboard {
+    background-color: var(--back-color);
+}
+
+.dashboard .data-div-box {
+    margin: 50px 0;
+    padding: 40px 30px;
+    background-color: var(--main-back-color);
+    border-radius: 20px;
+}
+
+.form-box {
+    background-color: var(--back-color);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.mt-200 {
+    margin-top: 200px !important;
+}
+
+.min-h-100 {
+    min-height: 100vh;
+}
+
+@media screen and (max-width:992px) {
+    .dashboard .data-div-box {
+        margin:0;
+        padding: 30px 10px;
+    }
+
+    .dashboard > .row {
+        background-color: var(--main-back-color);
+    }
+}
