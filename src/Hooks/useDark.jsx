@@ -25,10 +25,3 @@ export default function useDark() {
     }, [context[3].isDark])
 
 }
-
-
-
-let a = {
-    dark:{"--main" : "#16A34A"},
-    light:{"--main" : "#0284C7"}
-}

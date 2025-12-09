@@ -13,6 +13,7 @@ import icon from '../../Assets/images/icon.png'
 
 //css
 import './Header.css'
+import { Link } from "react-router-dom";
 
 function NavItem({ title, children }) {
     return (
@@ -39,7 +40,7 @@ export default function Header() {
 
 
     return (
-        <header className='d-flex justify-content-between align-items-center'>
+        <header className='d-flex justify-content-between align-items-center top-0'>
             <button className="header-btn d-none" onClick={openSidebar}><FiMenu /></button>
             <nav className="right-nav">
                 <div className="img-box">
@@ -60,6 +61,7 @@ export default function Header() {
                         <a href="#"><li>آموزش جنگو</li></a>
                         <a href="#"><li>مصور سازی داده با پایتون</li></a>
                     </NavItem>
+                    <Link to={'/blog'} >مقالات</Link>
                 </ul>
             </nav>
             <nav className="left-nav">
@@ -69,7 +71,7 @@ export default function Header() {
                 </div>
                 <button className="header-btn search-btn d-none"><FiSearch /></button>
                 <button className="header-btn" onClick={() => context[3].setIsDark(prev => !prev)}>{context[3].isDark ? <FiSun /> : <FiMoon />}</button>
-                <button className="header-btn"><FiUser /></button>
+                <Link to="/dashboard" className="header-btn"><FiUser /></Link>
             </nav>
         </header>
     )

@@ -16,6 +16,7 @@ import useDark from "./Hooks/useDark";
 
 // css
 import './custom.css'
+import './pages.css'
 
 function App() {
   useEffect(() => {

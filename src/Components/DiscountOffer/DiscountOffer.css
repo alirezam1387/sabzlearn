@@ -1,0 +1,11 @@
+.discount-offer {
+    background: var(--back-color);
+    color: #EF4444;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .discount-offer {
+        background: var(--main-back-color);
+    }
+}

@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
 
 body,
 #root {
-    background-color: var(--main-back-color);
+    background-color: var(--main-back-color) !important;
     direction: rtl !important;
 }
 
@@ -101,6 +101,10 @@ body,
 
 .mt-200 {
     margin-top: 200px !important;
+}
+
+.pt-150 {
+    padding-top: 150px !important;
 }
 
 .min-h-100 {

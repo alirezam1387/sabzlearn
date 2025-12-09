@@ -1,0 +1,80 @@
+/* course page */
+.topbar {
+    color: var(--white);
+}
+
+.topbar .title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.topbar .info {
+    font-size: 1rem;
+}
+
+.topbar img {
+    border-radius: 20px;
+}
+
+.topbar .price,
+.topbar .off-price {
+    font-size: 1.4rem;
+}
+
+.topbar .off-price {
+    text-decoration: line-through !important;
+    opacity: .4;
+}
+
+.topbar .top-img-responsive {
+    border-radius: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .topbar {
+        background: var(--back-color);
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .topbar button {
+        width: 100%;
+    }
+}
+
+/* Register */
+.register-box {
+    width: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-box .register-form {
+    padding: 15px;
+    background-color: var(--back-color);
+    border-radius: 20px;
+}
+
+.register-box h3, .register-box .hint {
+    color: var(--white);
+}
+
+.register-form input {
+    background-color: var(--gray);
+    border: 2px solid var(--gray);
+    transition: 400ms;
+    margin: 8px 0;
+}
+
+.register-form .input:focus {
+    border: 0;
+}
+
+@media screen and (max-width:670px) {
+    .register-box img {
+        display: none;
+    }
+}

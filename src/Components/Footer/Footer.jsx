@@ -94,8 +94,6 @@ export default function Footer() {
                 <p className="m-0 mt-4">
                     توسعه داده شده توسط
                     <a href="#"> علیرضا اقدم </a>
-                    و
-                    <a href="#"> امید </a>
                 </p>
             </div>
         </footer>
