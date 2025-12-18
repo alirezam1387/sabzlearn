@@ -6,7 +6,7 @@
 **یک وب‌سایت شرکتی تک‌صفحه‌ای (Landing Page) ساخته‌شده با React — سبک، واکنش‌گرا و قابل شخصی‌سازی**
 
 🔗 ریپازیتوری: https://github.com/alirezam1387/sabzlearn  
-🔗 نسخهٔ دمو:  https://sabzlearn-fezma7783-alirezas-projects-e13331ab.vercel.app/
+🔗 نسخهٔ دمو:  https://sabzlearn-beta.vercel.app/
 
 ---
 
